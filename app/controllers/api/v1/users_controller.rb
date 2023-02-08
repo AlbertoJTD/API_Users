@@ -10,7 +10,8 @@ class Api::V1::UsersController < ApplicationController
 
   # GET /users/1
   def show
-    render json: @user.to_json(only: [:id, :username])
+    #render json: @user.to_json(only: [:id, :username])
+    render :show
   end
 
   # POST /users
